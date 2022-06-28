@@ -157,6 +157,9 @@ def main(win, width):
                     start = None
                 elif node == end:
                     end = None
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE and not started:
+                    pass
     
     pygame.quit()
 
